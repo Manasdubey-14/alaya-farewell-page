@@ -128,6 +128,47 @@
   box-shadow: 0 0 25px rgba(255, 105, 180, 0.9); /* stronger glow */
 }
 
+    /* Responsive fixes */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem; /* smaller title on phone */
+    text-align: center;
+  }
+
+  .lantern {
+    width: 50px;  /* reduce lantern size */
+    height: auto;
+    top: 60px; /* push slightly down */
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr; /* 2 photos per row on phone */
+  }
+
+  .gallery img {
+    max-width: 180px; /* smaller photo frame */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .lantern {
+    width: 40px;
+    top: 50px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr; /* 1 photo per row on very small screens */
+  }
+
+  .gallery img {
+    max-width: 160px;
+  }
+}
+
 
   /* Title */
   h1 {
@@ -258,6 +299,11 @@
             <div class="photo-card">
                 <img src="photo7.jpg" alt="Alaya & Friend 7">
                 <div class="note">"Off to Japan for a year you'll shine,The coolest friend, one of a kind.Though far away, you're close in cheer,We'll miss your vibe till you're back here."</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="photo8.jpg" alt="Alaya & Friend 8">
+                <div class="note">"Happy journey alaya! Have a great year in Japan🌸 Learn a lot, enjoy a lot. Eat really good food (humare liye bhi lana heheh), make lots of memories.We are so proud of you! And don't worry too much, you'll be okay strong girl 💪🏻✨Miss us but not too much 😚"</div>
             </div>
 
             <!-- Add more photo-card divs as needed -->
